@@ -1,9 +1,9 @@
 // eslint-disable-next-line
 
-import displayBooks from './modules/bookManager.js'
+import displayBooks from './modules/bookManager';
 
-import './modules/display.js';
+import './modules/display';
 
-import './modules/time.js';
+import './modules/time';
 
 displayBooks.update();
