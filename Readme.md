@@ -22,9 +22,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Awesome Books Collection Project <a name="about-project"></a>
+# 📖 Awesome Books Collection With ES6 <a name="about-project"></a>
 
 > This is a simple web application that allows you to keep track of a collection of books. You can add books to the collection, remove books from the collection, and view all the books in the collection.
+
+>The purpose of refactoring the code is to learn and Practice ES6.
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -84,7 +86,7 @@ A web browser that supports HTML and CSS.
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/Xghayor/Awesome-Books.git
+git clone https://github.com/Xghayor/Books-With-ES6
 
 
 ### Usage
@@ -117,9 +119,6 @@ To deploy this project, you can upload the project folder (including the HTML an
 - GitHub: [@Xghayor](https://github.com/Xghayor)
 - LinkedIn: [@Ghayoorulbaqir](https://linkedin.com/in/ghayoor-ul-baqir)
 
-👤 **Author2**
-- GitHub: [@Binyam](https://github.com/binyamolango)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,7 +126,7 @@ To deploy this project, you can upload the project folder (including the HTML an
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Website with Navigation**
+- [ ] **Website with design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
