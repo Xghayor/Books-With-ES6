@@ -7,3 +7,4 @@ setInterval(() => {
   const now = DateTime.now();
   currentTime.innerHTML = now.toFormat('LLLL dd yyyy, hh:mm:ss a');
 }, 500);
+
