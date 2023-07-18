@@ -1,30 +1,30 @@
 class BookManager {
-    constructor() {
-      this.books = JSON.parse(localStorage.getItem('books')) || [];
-      this.addBtn = document.getElementById('formBtn');
-      this.awesomeBooks = document.getElementById('book');
-  
-      this.addBtn.addEventListener('click', this.add.bind(this));
-      this.awesomeBooks.addEventListener('click', this.remove.bind(this));
-      window.addEventListener('DOMContentLoaded', this.update.bind(this));
-    }
-  
+  constructor() {
+    this.books = JSON.parse(localStorage.getItem('books')) || [];
+    this.addBtn = document.getElementById('formBtn');
+    this.awesomeBooks = document.getElementById('book');
+
+    this.addBtn.addEventListener('click', this.add.bind(this));
+    this.awesomeBooks.addEventListener('click', this.remove.bind(this));
+    window.addEventListener('DOMContentLoaded', this.update.bind(this));
+  }
+
       add = () => {
         const title = document.getElementById('fTitle').value;
         const author = document.getElementById('fAuthor').value;
-  
+
         if (title.trim() === '' || author.trim() === '') {
           return;
         }
-  
+
         this.books.push({ title, author });
         localStorage.setItem('books', JSON.stringify(this.books));
-  
+
         this.update();
         document.getElementById('fTitle').value = '';
         document.getElementById('fAuthor').value = '';
       }
-  
+
       remove = (event) => {
         if (event.target.classList.contains('remove-button')) {
           const bookTitle = event.target.value;
@@ -33,10 +33,10 @@ class BookManager {
           this.update();
         }
       }
-  
+
       update = () => {
         this.awesomeBooks.innerHTML = '';
-  
+
         this.books.forEach((book) => {
           this.awesomeBooks.innerHTML += `
               <div class="books">
@@ -46,7 +46,7 @@ class BookManager {
               `;
         });
       }
-  }
-  
-  const displayBooks = new BookManager();
-  export default displayBooks;
+}
+
+const displayBooks = new BookManager();
+export default displayBooks;
